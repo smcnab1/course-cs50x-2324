@@ -20,3 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - [PS-3](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-3) (30 Dec 23)
 - [PS-4](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-4) (30 Dec 23)
 - [PS-5](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-5) (30 Dec 23)
+- [PS-6](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-6) (01 Jan 24)
+- [PS-7](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-7) (01 Jan 24)
+- [PS-8](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-8) (02 Jan 24)
+- [PS-9](https://github.com/smcnab1/cs50-23-24/tree/main/Problem%20Sets/PS-9) (02 Jan 24)
