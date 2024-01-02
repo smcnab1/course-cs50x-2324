@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased](https://github.com/smcnab1/cs50-23-24/compare/...HEAD)
 
 ### Added
+- ...
+
+## [CS50X 2024](https://github.com/smcnab1/course-cs50x-2324/releases/tag/2024)
+
+### Added
 - **Practice Labs Completed**
 - [L1 - Population](https://github.com/smcnab1/cs50-23-24/tree/main/Practice%20Labs/L1-Population) (30 Dec 23)
 - [L2 - Scrabble](https://github.com/smcnab1/cs50-23-24/tree/main/Practice%20Labs/L2-Scrabble) (30 Dec 23)
