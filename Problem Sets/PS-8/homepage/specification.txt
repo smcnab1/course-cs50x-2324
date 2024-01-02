@@ -1,0 +1,21 @@
+HTML Tags:
+1. <html>
+2. <head>
+3. <body>
+4. <title>
+5. <meta>
+6. <link>
+7. <h1>, <h2>, <h3>
+8. <p>
+9. <ul>, <li>
+10. <a>
+
+CSS Properties:
+1. font-family
+2. background-color
+3. margin
+4. padding
+5. color
+
+JavaScript and Bootstrap:
+I used Bootstrap for styling, especially for the navigation bar. JavaScript is included and actively used in this example.

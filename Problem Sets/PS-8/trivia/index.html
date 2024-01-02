@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+            <h3>What is the capital of France?</h3>
+            <input type="checkbox" class="answer" id="paris" onclick="checkAnswer(this, 'Paris')">
+            <label for="paris">Paris</label>
+
+            <input type="checkbox" class="answer" id="berlin" onclick="checkAnswer(this, 'Berlin')">
+            <label for="berlin">Berlin</label>
+
+            <input type="checkbox" class="answer" id="madrid" onclick="checkAnswer(this, 'Madrid')">
+            <label for="madrid">Madrid</label>
+
+            <div id="result1" class="result-text"></div>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3>Who is the author of "Romeo and Juliet"?</h3>
+            <input type="text" id="freeResponse">
+            <button onclick="checkFreeResponse()">Submit Answer</button>
+
+            <div id="result2" class="result-text"></div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(checkbox, correctAnswer) {
+            const isChecked = checkbox.checked;
+
+            if (isChecked) {
+                checkbox.nextElementSibling.style.backgroundColor = '#8BC34A'; // Green
+                document.getElementById('result1').innerHTML = '<div class="result-text">Correct!</div>';
+            } else {
+                checkbox.nextElementSibling.style.backgroundColor = '#FF5733'; // Red
+                document.getElementById('result1').innerHTML = '<div class="result-text">Incorrect</div>';
+            }
+
+            // Disable all checkboxes to prevent further clicks
+            const answerCheckboxes = document.querySelectorAll('.answer');
+            answerCheckboxes.forEach(cb => cb.disabled = true);
+        }
+
+        function checkFreeResponse() {
+            const userInput = document.getElementById('freeResponse');
+            const resultDiv = document.getElementById('result2');
+            const userAnswer = userInput.value.toLowerCase();
+
+            if (userAnswer === 'shakespeare') {
+                userInput.style.backgroundColor = '#8BC34A'; // Green
+                resultDiv.innerHTML = '<div class="result-text">Correct!</div>';
+            } else {
+                userInput.style.backgroundColor = '#FF5733'; // Red
+                resultDiv.innerHTML = '<div class="result-text">Incorrect</div>';
+            }
+
+            // Disable the input and button after checking
+            userInput.disabled = true;
+            document.querySelector('button').disabled = true;
+        }
+    </script>
+</body>
+</html>
